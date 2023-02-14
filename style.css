@@ -17,7 +17,6 @@ header {
   display: flex;
   flex-direction: row;
   justify-content: space-between;
-  align-items: center;
   margin-bottom: 1rem;
 }
 
@@ -29,7 +28,6 @@ h1, h3, nav {
 /* menu */
 header a {
   width: 5rem;
-  text-align: center;
   padding: .25rem;
   color: rgb(121, 41, 41);
   border: 1px solid black;
@@ -71,3 +69,18 @@ main > * {
 /* media queries */
 
 /* YOUR CODE HERE */
+@media screen and (max-width:768px){
+  nav {
+    display: flex;
+    flex-direction: row;
+  }
+  header {
+    display: flex;
+    flex-direction: column;
+    align-items: none;
+
+  }
+  main {
+    width: 100%;
+  }
+}
